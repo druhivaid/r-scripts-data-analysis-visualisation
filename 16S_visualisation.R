@@ -8,7 +8,7 @@ library(patchwork)
 library(cowplot)
 
 # Load & clean data file
-genus_data_fp <- "//nask.man.ac.uk/home$/Documents/R/GitHub_Rscripts/genus_rel_abundance.xlsx"
+genus_data_fp <- "//../R/GitHub_Rscripts/genus_rel_abundance.xlsx"
 
 genus_data <- readxl::read_xlsx(genus_data_fp, "genera")
 
@@ -132,4 +132,5 @@ merged_plot <- (genus_plot_1 + genus_plot_2 + legend_plot) + plot_spacer() + plo
 
 # Save plot as a high resolution png
 ggsave("genera_plot.png", merged_plot, device="png", width = 30, height = 5, dpi = 600, bg = "transparent")
+
 
