@@ -10,7 +10,7 @@ library(purrr)
 
 
 # Load data and add subscripts to make it match KEGGLink data
-KO_hits <- read_excel("/../Documents/R/GitHub_Rscripts/kegg_visualisation.xlsx", sheet = "kofam_tpm")
+KO_hits <- read_excel("/../Documents/R/GitHub_Rscripts/communityTPM_kegg_visualisation.xlsx", sheet = "kofam_tpm")
 
 KO_hits$KO <- paste0("ko:", KO_hits$KO)
 
