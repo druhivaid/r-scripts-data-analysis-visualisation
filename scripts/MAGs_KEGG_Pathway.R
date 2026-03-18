@@ -3,7 +3,7 @@ library(dplyr)
 library(readxl)
 library(pheatmap)
 
-# Load data and add subscripts to make it match KEGGLink data
+# Load data
 KO_hits <- read_excel("C:/Users/../../Github_Rscripts/r-scripts-data-analysis-visualisation/data/kegg_visualisation_bins.xlsx", sheet = "MAGs")
 
 # Convert KO IDs to KEGG format
