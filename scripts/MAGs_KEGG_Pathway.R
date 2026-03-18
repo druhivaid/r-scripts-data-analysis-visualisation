@@ -96,5 +96,5 @@ Heatmap_pathways <- pheatmap(
   cellwidth = 26.6,
   cellheight = 50,
   labels_row = KO_pathway_presence$Pathway,
-  filename = "Plastics_heatmap_maplevel_coverage.png"
+  filename = "Heatmap_pathways.png"
 )
